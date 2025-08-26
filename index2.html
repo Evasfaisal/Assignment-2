@@ -1,0 +1,43 @@
+!<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Card</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-papmQF7Er4UYxQUtP1s4JjE7tM0hQhEo2wG5kGz9T3MFrfOqImLE5fF2kWtuMcE43P7L9SgRrVfV2pZ1Z3tF0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="bg-white p-4 rounded-lg shadow w-80">
+        <div class="flex justify-between">
+            <div>
+                <h2 class="font-bold">National Emergency Number</h2>
+                <p class="text-sm text-gray-500">999</p>
+            </div>
+            <span>❤️</span>
+        </div>
+        <div class="mt-2">
+            <span class="inline-block px-2 py-1 bg-gray-200 text-xs rounded">All</span>
+        </div>
+        <div class="mt-4 flex space-x-2">
+            <!-- Copy Button -->
+            <button class="flex items-center justify-center gap-2 flex-1 bg-gray-200 px-3 py-1 rounded text-gray-700">
+                <i class="fa-regular fa-copy"></i>
+                Copy
+            </button>
+            <!-- Call Button -->
+            <button class="flex items-center justify-center gap-2 flex-1 bg-green-500 text-white px-3 py-1 rounded">
+                <i class="fa-solid fa-phone"></i>
+                Call
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
