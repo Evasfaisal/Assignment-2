@@ -10,5 +10,15 @@ document.getElementById("card-box").addEventListener('click',function(e){
         loveCount++;
         getElement("love-count").innerText = loveCount;
     }
+    if (e.target.id === "call") {
+        const mainCoinCount = Number(getElement("coins").innerText);
+        if (mainCoinCount <20) {
+            alert("you dont have enough coins to make this call!")
+            return;
+        }
+        let coinCount = Number(getElement("coins").innerText);
+        coinCount -=20;
+        getElement("coins").innerText = coinCount;
+    }
 
 })
