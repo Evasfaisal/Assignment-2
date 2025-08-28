@@ -50,17 +50,18 @@ document.getElementById("card-box").addEventListener('click',function(e){
         const card = buttonParent.parentNode; 
         const ServiceName = card.querySelector(".Service-name").innerText;
         const ServiceNumber = card.querySelector(".Service-number").innerText;
+        const ServiceNumberFull = card.querySelector(".Service-name-full").innerText;
         alert(`${ServiceName}-${ServiceNumber}`)
 
-
+        
 
         const historyContainer = getElement("History")
 
         const createDiv = document.createElement("div")
         createDiv.innerHTML = `   <div
-                        class="History-child border rounded-lg w-[352px] h-[105px]  p-5 text-sm bg-gray-100 mt-5 flex flex-col justify-between">
+                        class="History-child border rounded-lg  sm:w-[352px] h-[105px]  p-7 text-sm bg-gray-100 mt-5 flex flex-col justify-between">
                         <div class="flex justify-between items-center ">
-                            <h1 class="font-bold">${ServiceName}</h1>
+                            <h1 class="font-bold">${ServiceNumberFull}</h1>
 
                             <span class="call-time">${new Date().toLocaleTimeString()}</span>
                         </div>
