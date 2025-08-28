@@ -44,7 +44,7 @@
         </div>
         <!-- Copy Count -->
         <div class="flex items-center justify-center px-3 py-1 border bg-green-600 rounded-full gap-2 sm:w-[120px] sm:h-[60px] ">
-            <span class="font-bold text-white"><span id="Copy Count">0</span> Copy</span>
+            <span class="font-bold text-white"><span id="Copy-Count">0</span> Copy</span>
             
         </div>
     </div>
@@ -68,10 +68,10 @@
     </section>
 
     <!-- Main Section -->
-    <main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <main id="card-box" class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
 
         <!-- Cards Section -->
-        <div id="card-box" class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div id="card-box-child" class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
 
             <!-- Card Template -->
             <div class="bg-white p-4 rounded-lg shadow">
@@ -91,7 +91,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-11 text-center">All</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-13 text-center">Police</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -135,7 +135,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-11 text-center">Fire</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-15 text-center">Health</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class=" flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-13 text-center">Help</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-13 text-center">Govt.</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -223,7 +223,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-15 text-center">Electricity</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -245,7 +245,7 @@
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-13 text-center">NGO</span>
                 </div>
                 <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -265,8 +265,8 @@
                 <div class="">
                     <span class="inline-block px-2 py-1 bg-gray-200  rounded-full w-14 text-center">Travel</span>
                 </div>
-                <div class="mt-4 flex space-x-2">
-                    <button class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
+                <div class="mt-4 flex gap-2">
+                    <button id="copy" class="flex-1 border px-3 py-1 rounded">📋 Copy</button>
                     <button id="call" class="flex-1 bg-green-500 text-white px-3 py-1 rounded">📞 Call</button>
                 </div>
             </div>
@@ -278,8 +278,8 @@
         <!-- History Section -->
         <div id="History" class="History-sec bg-white rounded-lg shadow p-4">
             <div class="flex justify-between items-center">
-                <h3 class="font-bold flex items-center space-x-1">🕒 <span>Call History</span></h3>
-                <button class=" text-sm border w-[90px] rounded-full h-[30px] bg-green-600 text-white">Clear</button>
+                <h3 class="font-bold flex items-center ">🕒 <span>Call History</span></h3>
+                <button id="clear" class=" text-sm border w-[90px] rounded-full h-[30px] bg-green-600 text-white">Clear</button>
             </div>
 
                     <!-- <div

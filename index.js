@@ -13,6 +13,25 @@ document.getElementById("card-box").addEventListener('click',function(e){
         loveCount++;
         getElement("love-count").innerText = loveCount;
     }
+
+
+    if (e.target.id === "copy") {
+
+        const buttonParent = e.target.parentNode;
+        const card = buttonParent.parentNode;
+        const ServiceNumber = card.querySelector(".Service-number").innerText;
+        alert(`Number Copied ${ServiceNumber}`)
+        navigator.clipboard.writeText(ServiceNumber);
+
+
+        let copyCount = Number(getElement("Copy-Count").innerText);
+        copyCount++;
+        getElement("Copy-Count").innerText = copyCount;
+    }
+
+
+
+
     
     if (e.target.id === "call") {
 
@@ -50,8 +69,34 @@ document.getElementById("card-box").addEventListener('click',function(e){
         `
         historyContainer.appendChild(createDiv);
 
-        
+
       
     }
+
+
+
+
+})
+
+
+
+
+document.getElementById("History").addEventListener("click", function (e) {
+
+    e.preventDefault()
+
+    if (e.target.id === "clear") {
+
+
+        const getHistory= getElement("History")
+
+        const removeHistoryChild = getHistory.querySelectorAll(".History-child")
+
+        for (const child of removeHistoryChild ) {
+            child.remove()
+        }
+
+    }
+
 
 })
